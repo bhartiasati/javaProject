@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+      <!-- <include file="struts-1.xml"/>-->
+
+	<package name="testproj" abstract="false" extends="struts-default">
+	
+	
+	<action name="shirt" class="online.newShirt">
+	<result name="success">newShirtResult.jsp</result>
+	</action>
+	<action name="buy" class="online.payment1">
+	<result name="success">buy.jsp</result>
+	</action>
+	
+	<action name="create" class="online.create">
+	     <result name="input">signup.jsp</result>  
+	  <result name="success">homecreate.jsp</result>
+	   
+	</action>
+	<action name="newnext" class="online.newShirt">
+	<result name="success">newShirtResult.jsp</result>
+	</action>
+	<action name="AdminLogin" class="online.AdminLogin">
+	<result name="success">adminresult.jsp</result>
+	<result name="error">error.jsp</result>
+	</action>
+	<action name="insertshirt" class="online.InsertShirt">
+	<result name="success">viewshirt.jsp</result>
+	<result name="error">error.jsp</result>
+	</action>
+	
+	<action name="deleteshirt" class="online.DeleteShirt">
+	<result name="success">viewshirt.jsp</result>
+	<result name="error">error.jsp</result>
+	</action>
+	<action name="updateinsert" class="online.UpdateShirt">
+	<result name="success">viewshirt.jsp</result>
+	<result name="error">error.jsp</result>
+	</action>
+	
+	</package>	
+	
+ 								
+	</struts>
