@@ -40,7 +40,7 @@ Welcome to Online Shopping
 <s:property value="color"/>
 </td>
 
-<s:radio name="type" label="select payment type" list="{'<a href=https://www.onlinesbi.com/>SBI</a>','<a href=icici>ICICT</a>','<a href=allahabad>Allahabad</a>'}"/>
+<s:radio name="type" label="select payment type" list="{'<a href=https://www.onlinesbi.com/>SBI</a>','<a href=icici>ICICI</a>','<a href=allahabad>Allahabad</a>'}"/>
 
 
 </tr>

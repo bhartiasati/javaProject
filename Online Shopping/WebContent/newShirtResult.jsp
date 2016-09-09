@@ -49,7 +49,7 @@ shirt
 
 <h4>prize</h4>
 <ul>
-<li><a href="below10.jsp">below 10%</a></li>
+<li><a href="below500.jsp">below 500</a></li>
 <li>500-1000</li>
 <li>1000-1500</li>
 <li>1500 to above</li>
@@ -60,7 +60,7 @@ Size is:<s:property value="ll"/><br>
 color is:<s:property value="color"/><br>
 Prize is:<s:property value="prize"/><br>
 Discount is:<s:property value="discount"/><br>
-
+<%session.setAttribute("size",request.getParameter("ll")); %>
 
 </td>
 <td>
@@ -69,10 +69,7 @@ Discount is:<s:property value="discount"/><br>
 </s:form>
   </td>
 <td>
-<s:form action="buy.action">
-
-<s:submit value="buy"/>
-</s:form>
+<a href="shippingdetail.jsp">buy</a>
   </td>
 </tr>/
 </table>

@@ -66,14 +66,14 @@
 					 Statement stmt = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
 					//step5 close the connection object  
 
-		 		int i=1;
-				ResultSet rs=stmt.executeQuery("select * from shirts where discount<25");
+		 		 int i=1;
+				ResultSet rs=stmt.executeQuery("select * from shirts where prize<500");
 				%>
 			
 		
 				
 					<%
-						rs.absolute(i);{
+						rs.absolute(i);i++;{
 					%>
 					
 						<TD>
@@ -82,13 +82,13 @@
 						<li>color is<%=rs.getString(2)%></li>
 						<li>prize is<%=rs.getInt(3)%></li>
 						<li>discount is<%=rs.getInt(4)%></li></ul></TD>
-
+						<% %>
 					<%
 					
 						}
 					%>
 					
-<td><a href="below10.jsp">next</a></td>
+<td><a href="below500.jsp">next</a></td>
 </tr>
 
 					

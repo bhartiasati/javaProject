@@ -41,7 +41,9 @@
 	<result name="success">viewshirt.jsp</result>
 	<result name="error">error.jsp</result>
 	</action>
-	
+	<action name="shipping" class="online.ShippingDetail">
+	<result name="success">report.jsp</result>
+	</action>
 	</package>	
 	
  								
